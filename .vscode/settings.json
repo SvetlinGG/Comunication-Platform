@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "*.styl": "stylus"
+  },
+  "css.validate": false
+}

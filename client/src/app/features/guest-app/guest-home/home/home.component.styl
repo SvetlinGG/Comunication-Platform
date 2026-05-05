@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato')
 *
   box-sizing border-box
 
@@ -119,9 +119,9 @@ a[href]
         transform translateX(0)
         transition transform $duration cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color $duration
 
-        $colors = #9b59b6 #86e2d5 #f5ab35 #1e8bc3 #e26a6a
+        $colors = (#9b59b6 #86e2d5 #f5ab35 #1e8bc3 #e26a6a)
         for $item in (1..5)
-          &:nth-of-type({$item})
+          &:nth-of-type({item})
 
 
             a[href]:after
