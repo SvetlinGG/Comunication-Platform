@@ -31,7 +31,18 @@ export class AuthService {
       })
     );
   }
-  
+  getToken(): string | null{
+    return this.user()?.accessToken || null;
+  }
+
+  logout(): void{
+    localStorage.removeItem('user');
+    this.user.set(null)
+  }
+
+  getCurrentUser(): string | null{
+    return this.user()?.id || null;
+  }
 
   private getUserFromStorage(): AuthUser | null{
     const rawUser = localStorage.getItem('user');
